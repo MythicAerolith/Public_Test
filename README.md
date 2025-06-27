@@ -15,11 +15,27 @@ embedded video media
 to focus on improving FRONT-END elements of website, the most important languages to learn include, HTML5, CSS3, Bootstrap, and Javascript
 for BACK-END, use Python, Ruby, and PHP
 
-Markup Language- a computer language that defines the  structure and presentation of raw text
 HyperText- text displayed on computer or device that provides access to other text through hjyperlinks
+Markup Language- a computer language that defines the  structure and presentation of raw text
 
 
                                                                 HTML
+HTML is a declarative language, meaning it describes a desired result without explicitly listing steps that must be performed. Declarative languages tell an interpreter what to do, not how to do it.
+
+
+It is best to start thinking about how your website will be structured by considering the heading hierarchy, which would be defined by the h1-h5 tags to create structure visually and verbally for screen readers. You want to avoid skipping headings in order to keep the accessibility level high, skipping headings can create a confusing navigational experience for those using assistance like screen readers. 
+
+Semantic HTML uses tags which best convey the underlying meaning of the content the tag contains.
+
+Browsers style our headings automatically because they have their own CSS built-in.
+
+You want to keep the structure of your HTML coherent for readability, accessibility, and ease of styling.
+
+Dvitis: the excessive misuse of divs to markup a page
+
+Indentation: most style guides recommend that you use two spaces to indent nested elements.
+
+
 HTML is organized as a collection of family tree relationships. When an element is contained inside another element, it is considered the "child" of that element. The child element is said to be "nested" inside of the "parent" element. 
 Example:
 
@@ -35,6 +51,9 @@ the <body> element is the parent element of the <div> element, and both the <h1>
 
 
 <div> element (short for division) container that divides the page into sections
+
+
+<section> element is also a container, but it has more meaning semantically unlike the <div> element
 
 
 Attributes: content added to the opening tag of an element to provide info, change styling, etc. 
