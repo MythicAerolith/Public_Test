@@ -127,3 +127,19 @@ Example:
 </video>
 
 
+HTML files rewquire certain elements to set up the document properly, we let web browsers know that we are using HTML by starting our doucment with a "document type declaration"
+Example:
+<!DOCTYPE html>
+this decalaration is an instruction, and it must be the first line of code in your HTML document. 
+HTML code is always saved in a file with an .html extension.
+
+
+The <!DOCTYPE html> declaration provides the browser with two pieces of info (type of document and the HTML version), but in order to create HTML structure and content, we must add opneing and closing <html> tags after declaring <!DOCTYPE html>
+Example:
+<!DOCTYPE html>
+<html>
+
+</html>
+
+
+the <head> elemenet contains the metadata for a web page, metadata is info about the page that isn't displaeyd directly.
