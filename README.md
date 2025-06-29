@@ -142,4 +142,36 @@ Example:
 </html>
 
 
-the <head> elemenet contains the metadata for a web page, metadata is info about the page that isn't displaeyd directly.
+the <head> elemenet contains the metadata for a web page, metadata is info about the page that isn't displaeyd directly, and it part of the metaphor for the body like <head> = head of person, the brain, thoughts and logic you can't see happening whereas <body> = body of person, the part you can always see.
+
+
+A browser's ta;b displays the title specified in the <title> tag, and the <title> tag is always inside of the <head>
+
+
+You can add links to a web page by adding an anchor element <a> and including the text of the link between the opening and closing tags. The anchor must contain the "href" attribute that contains the URL
+Example:
+<a href="https://www.youtube.com/">YouTube</a>
+
+
+You can make the link open the webpage in a new tab by using the "target" attribute in the <a> element.
+The "target" attribute specifies how a link should open, and to get it to open to a new window it requires a value of "_blank" and the "target" attribute can be added directly to the <a> tag just like the "href" attribute
+Example:
+<a href="https://en.wikipedia.org/wiki/Brown_bear" target="_blank">The Brown Bear</a>
+
+
+When making multi-page static websites, web devs often store HTML files in the root directory, or a main folder where all the files for the project are stored. As the size of ypur projects grow, you may use additional folders wihtin the main project folder to organize code. 
+Example:
+project-folder/
+|—— about.html
+|—— contact.html
+|—— index.html
+
+The example shows three different files stored in one folder. HTML files are often stored in the same folder. If the browser is currently displaying index.html it also knows that about.html and contact.html are in the same folder, allowing use to link web pages together using a relative path. 
+Example:
+<a href="./contact.html">Contact</a>
+
+In the above example, the anchor tag is used with a relative path to link to a file in the same folder. On the web page, "Contact" will appear as a hyperlink. 
+
+A relative path is a filename that shows to a local file versus an absolute path which would pull a URL from an outside source like https://www.codecademy.com/learn/learn-html which is stored in a different folder. 
+
+The "./" in "./index.html" tells the browser to look for the file in the current folder. 
