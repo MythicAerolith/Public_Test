@@ -15,13 +15,16 @@ embedded video media
 to focus on improving FRONT-END elements of website, the most important languages to learn include, HTML5, CSS3, Bootstrap, and Javascript
 for BACK-END, use Python, Ruby, and PHP
 
-HyperText- text displayed on computer or device that provides access to other text through hjyperlinks
-Markup Language- a computer language that defines the  structure and presentation of raw text
+
+
 
 
                                                                 HTML
 HTML is a declarative language, meaning it describes a desired result without explicitly listing steps that must be performed. Declarative languages tell an interpreter what to do, not how to do it.
 
+Markup Language- a computer language that defines the  structure and presentation of raw text
+
+HyperText- text displayed on computer or device that provides access to other text through hjyperlinks
 
 It is best to start thinking about how your website will be structured by considering the heading hierarchy, which would be defined by the h1-h5 tags to create structure visually and verbally for screen readers. You want to avoid skipping headings in order to keep the accessibility level high, skipping headings can create a confusing navigational experience for those using assistance like screen readers. 
 
@@ -57,16 +60,19 @@ the <body> element is the parent element of the <div> element, and both the <h1>
 
 
 Attributes: content added to the opening tag of an element to provide info, change styling, etc. 
+
+
 "id" is the most common attribute added to elements.
 Example:
 <div id="intro">
     <h1>Introduction</h1>
 </div>
 This way, it helps identify the elements when using the same element multiple times
+The "id" attribute is also useful when linking to an element to scroll to on the same page. 
 
 
 Paragraphs <p>: contains a block of plain text
-<span>: contains short pieces of text or other HTML, used to spearate small pieces of content that are on the same line as other content
+<span>: contains short pieces of text or other HTML, used to spearate small pieces of content that are on the same line as other content by representing text content as an inline element.
 Example:
 <div>
   <h1>Technology</h1>
@@ -142,13 +148,18 @@ Example:
 </html>
 
 
-the <head> elemenet contains the metadata for a web page, metadata is info about the page that isn't displaeyd directly, and it part of the metaphor for the body like <head> = head of person, the brain, thoughts and logic you can't see happening whereas <body> = body of person, the part you can always see.
+the <head> elemenet contains the metadata for a web page, metadata is info about the page that isn't displaeyd directly, and it part of the metaphor for the body like <head> = head of person, the brain, thoughts and logic you can't see happening whereas <body> = body of person, the part you can always see. 
+
+Metadata contained within the <head> element describes the document, is data about data, will not be displayed on the page itself.
 
 
-A browser's ta;b displays the title specified in the <title> tag, and the <title> tag is always inside of the <head>
+A browser's tab displays the title specified in the <title> tag, and the <title> tag is always inside of the <head>
+***Apparently, the <title> element also makes a tooltip when hovering over an element? Not sure, just guessed on a question during practice and got it right so maybe I will get to this later on in the lesson I am curretly doing. Will revisit when I know more.***
+
+According to the W3C, the ideal title should be under 64 characters long.
 
 
-You can add links to a web page by adding an anchor element <a> and including the text of the link between the opening and closing tags. The anchor must contain the "href" attribute that contains the URL
+You can add links to a web page by adding an anchor element <a> and including the text of the link between the opening and closing tags. The anchor must contain the "href" attribute that contains the URL. This would be called an "absolut path" because it is the full address to a file, regardless of the current working directory.
 Example:
 <a href="https://www.youtube.com/">YouTube</a>
 
@@ -173,5 +184,43 @@ Example:
 In the above example, the anchor tag is used with a relative path to link to a file in the same folder. On the web page, "Contact" will appear as a hyperlink. 
 
 A relative path is a filename that shows to a local file versus an absolute path which would pull a URL from an outside source like https://www.codecademy.com/learn/learn-html which is stored in a different folder. 
+Another definition of relative path: the address to a file relative to the current working directory.
 
-The "./" in "./index.html" tells the browser to look for the file in the current folder. 
+The "./" in "./index.html" tells the browser to look for the file in the current folder, and refers to our current working directory which is also usually the root folder we are working in
+
+
+In order to turn nearly any element into a hyperlink, wrap it in an anchor element. 
+Example:
+<a href="https://en.wikipedia.org/wiki/Opuntia" target="_blank">
+<img src="https://www.Prickly_Pear_Closeup.jpg" alt="A red prickly pear fruit"/></a>
+
+
+If you want users to be able to clikc a link and be taken to the section automatically, you have to link to a target on the same page by giving the target an "id" attribute and unique value.
+Example:
+<p id="top">This is the top of the page!</p>
+<h1 id="bottom">This is the bottom! </h1>
+
+An "id" attribute should be descriptive to make it easier to remember the purpose of a link, the target link is a string containing the "#" character and the target element's "id"
+Example:
+<ol>
+  <li><a href="#top">Top</a></li>
+  <li><a href="#bottom">Bottom</a></li>       
+</ol>
+
+***The anchor element must be embedded inside the list element, wrapping the list element in an anchor element is invalid HTML***
+
+
+
+Programmers use two tools to keep track of how elements are related and visualize the relationship between elements: whitespace and indentation
+
+The World Wide Web Consortium (W3C) is responsible for maintaining the style standards of HTML, and at the current time of learning they recommend 2 spaces of indentation when writing HTML code. 
+
+HTML files also allow the addition of comments, or notes that are added that the website will not read and are primarily added for the programmers reading the code.
+Example:
+<!-- This is a comment that the browser will not display -->
+
+A full list of HTML elements for reference can be found here:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements
+
+the first ever website created by Tim Berners-Lee in 1991:
+https://info.cern.ch/hypertext/WWW/TheProject.html
